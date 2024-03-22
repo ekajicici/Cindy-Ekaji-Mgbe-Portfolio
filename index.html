@@ -12,20 +12,37 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <style>
-      #pic {
-        height: 400px;
-        width: 400px;
+      body {
+        background-color: #f6f5f5;
       }
 
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        width: 1200px;
+      @media (min-width: 600px) {
+        #pic {
+          height: 400px;
+          width: 400px;
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          width: 1200px;
+        }
       }
 
       #nav-link {
         color: black;
+      }
+      .nav-link {
+        font-family: MV Boli, Times, serif;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .rights {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
       }
     </style>
   </head>
@@ -38,11 +55,18 @@
         href="/"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       >
-        <img src="./assets copy/assets/images/CINDY1.jpg" /> <p><h1 style="font-family:MV Boli, Times, serif;"> PROFOLIO</h1></p>
+        <img src="./assets copy/assets/images/CINDY1.jpg" />
       </a>
-      
-
-      
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link" aria-current="page"
+            >PROFOLIO</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="./public/about.html" class="nav-link">ABOUT ME</a>
+        </li>
+      </ul>
     </header>
     <div class="container">
       <div></div>
@@ -115,5 +139,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <footer>
+      <p class="rights">© Cindy Ekaji Mgbe. All rights reserved.</p>
+    </footer>
   </body>
 </html>
